@@ -5,7 +5,7 @@ var myChart = new Chart(ctx, {
         labels: [],
         datasets: [{
             <!-- fill: false, -->
-            label: 'INBOX',
+            label: 'All contributors',
             data: [],
             backgroundColor: [
                 'rgba(54, 162, 235, 0.2)',
@@ -32,7 +32,7 @@ var myChart = new Chart(ctx, {
         responsive: true,
         title: {
             display: true,
-            text: 'Inbox size vs time'
+            text: 'Open PRs over time'
         },
         tooltips: {
             enabled: false,
@@ -60,7 +60,7 @@ var myChart = new Chart(ctx, {
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: '# of mails'
+                    labelString: '# of open PRs'
                 }
             }]
         }
